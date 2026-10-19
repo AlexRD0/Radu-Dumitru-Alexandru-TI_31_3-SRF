@@ -1,0 +1,47 @@
+=== TITLU ===
+usa netscap urg govern action microsoft
+
+=== PARAGRAFE ===
+netscap commun corp.' lead antitrust lawyer ha written justic depart urg immedi action microsoft corp characteris far-reach anti-competit behaviour
+
+letter demand immedi attent wa date aug made avail reuter tuesdai repres escal battl word rival compani began earlier thi month thei prepar issu version internet browser softwar
+
+gari reback outsid attornei repres netscap suggest letter deputi assist attornei gener joel klein issu turn feder trade commiss investig
+
+eight-pag letter accus microsoft made written offer comput maker internet servic provid larg corpor provid clandestin side payment discount microsoft desktop oper system window payment form real estat window open screen
+
+reback sai induc made condit parti involv make competitor browser access user microsoft' browser browser enabl comput user access internet' world wide web
+
+letter netscap uncov numer addit step microsoft ha purpos elimin competit internet softwar market includ predatori price bundl product
+
+microsoft spokeswoman clair lematta dismiss letter sai full wild unsubstanti statement
+
+market document masquerad legal document netscap feel competit pressur
+
+legal clash critic point netscap redmond wash.-bas softwar giant introduc version respect browser netscap navig microsoft internet explor
+
+mountain view calif.-bas netscap earli leader browser technolog hold lead market share estim percent worldwid market
+
+microsoft window system ar found percent person comput ha move quickli gain estim percent browser market sai million peopl download latest browser version
+
+softwar internet explor wa formal introduc week ago mondai netscap launch latest version browser navig
+
+compani link content provid offer free trial subscript wai promot browser analyst microsoft ha thrown market financi clout internet product ha level plai field latest softwar
+
+microsoft netscap ar alreadi wai develop version browser
+
+reback silicon vallei lawyer spearhead past legal tussl microsoft alleg practic address consent decre reach microsoft justic depart year ago
+
+microsoft' behaviour anyth anti-competit pernici conduct address specif decre reback wrote letter
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+Class: bip:topics:1.0
+  - Code: C13
+  - Code: C34
+  - Code: CCAT

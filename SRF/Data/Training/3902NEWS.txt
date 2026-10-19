@@ -1,0 +1,42 @@
+=== TITLU ===
+india infosi top india birla mutual portfolio
+
+=== PARAGRAFE ===
+indian softwar firm infosi technolog top invest portfolio birla advantag mutual fund valu term june fund quarterli report releas tuesdai
+
+fund infosi share valu million rupe birla advantag maiden fund launch birla capit amc joint ventur india' aditya birla group capit group u. februari
+
+unilev subsidiari hindustan lever stood share valu million rupe asian paint madra cement
+
+seventy-nin percent birla advantag fund portfolio consist share reach week high dure month report
+
+report quot credenc research unit track perform mutual fund sai birla advantag fund wa perform fund year end june total domest fund track
+
+rang perform fund incred wide plu percent minu percent onli fund outperform market thi period birla mutual report
+
+indian stock market continu attract pois upturn
+
+liquid improv significantli month term avail cost fund
+
+increas avail monei declin interest rate
+
+bombai newsroom
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: INDIA
+Class: bip:industries:1.0
+  - Code: I24200
+  - Code: I25510
+  - Code: I25800
+  - Code: I33020
+  - Code: I3302021
+  - Code: I41000
+  - Code: I81502
+  - Code: I8150211
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C152
+  - Code: C21
+  - Code: CCAT

@@ -1,0 +1,33 @@
+=== TITLU ===
+usa unveil intranet product
+
+=== PARAGRAFE ===
+tuesdai unveil intranetwar servic design establish compani grow corpor intranet market
+
+product full servic intranet internet access platform busi size build servic offer netwar softwar
+
+latest softwar offer high-perform web server browser gatewai network protocol multiprotocol router wide-area network internet connect
+
+reveal price softwar plan releas fall
+
+compani intranetwar compat exist network softwar firm preserv exist network invest select instal network compon upgrad system meet demand
+
+concentr intranetwar futur continu sell support netwar netwar
+
+intranetwar open product line million futur network robert frankenberg chairman chief execut offic
+
+softwar secur act level-on secur firewal becaus onli network server carri task contrast tradit system numer user capabl
+
+orem utah-bas ha activ network softwar sinc ha fallen netscap commun corp microsoft corp build intranet market share
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+  - Code: I33030
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: CCAT

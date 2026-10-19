@@ -1,0 +1,32 @@
+=== TITLU ===
+usa nbc panason announc time squar screen
+
+=== PARAGRAFE ===
+giant videoscreen equip technolog mount atlanta olymp hung time squar beam televis program nbc panason wednesdai
+
+compani offici told confer nbc astrovis panason wa schedul begin oper autumn time squar build famou worldwid year' ev ball drop
+
+matsushita electr industri co parent panason consum electron nbc televis unit gener electr co
+
+screen replac so-cal jumbotron beam advertis time squar year wa switch manufactur soni corp.at end mai
+
+squar foot sq metr astrovis screen displai event olymp stadium atlanta thi summer astrovis screen ar stadium arena world
+
+ten year everyon call nbc astrovis bill bolster presid cnbc network primarili daytim financi broadcast
+
+bolster screen displai event nbc network nbc channel york cnbc msnbc all-new cabl ventur nbc start juli microsoft corp
+
+matsushita screen percent larger jumbotron advanc fluoresc technolog provid clear pictur direct sunlight compani
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+  - Code: I34000
+  - Code: I34540
+Class: bip:topics:1.0
+  - Code: C24
+  - Code: CCAT

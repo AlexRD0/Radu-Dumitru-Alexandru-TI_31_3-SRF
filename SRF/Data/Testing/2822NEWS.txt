@@ -1,0 +1,22 @@
+=== TITLU ===
+usa spyglass lauch web softwar version
+
+=== PARAGRAFE ===
+spyglass tuesdai launch version web server softwar develop kit fulli compat microsoft corp unix platform
+
+softwar provid improv featur file cach secur commun spyglass
+
+price softwar start includ licens one-year support mainten contract
+
+chicago newsdesk
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: CCAT

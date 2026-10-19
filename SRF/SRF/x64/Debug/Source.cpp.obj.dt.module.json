@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "SRF\\x64\\Debug\\Source.obj",
+            "outputs": [
+                "SRF\\x64\\Debug\\Source.cpp.obj.dt.module.json",
+                "SRF\\x64\\Debug\\Source.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

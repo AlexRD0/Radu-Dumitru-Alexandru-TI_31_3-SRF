@@ -1,0 +1,27 @@
+=== TITLU ===
+usa datawork corp acquir dcd corp
+
+=== PARAGRAFE ===
+datawork corp wednesdai sign definit agreement acquir outstand stock dcd corp
+
+datawork expect acquisit complet fourth quarter
+
+datawork plan issu million share common stock pai acquisit
+
+stock rose year-high wednesdai
+
+dcd base minneapoli develop busi manag softwar make-to-ord manufactur segment
+
+datawork base san diego supplier softwar discret repetit midrang manufactur
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C18
+  - Code: C181
+  - Code: CCAT

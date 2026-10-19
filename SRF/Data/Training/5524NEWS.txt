@@ -1,0 +1,21 @@
+=== TITLU ===
+usa research alert bmc softwar restart
+
+=== PARAGRAFE ===
+furman selz analyst sanjiv hingorani reiniti bmc softwar bui rate
+
+earn share growth compound annual rate percent fiscal
+
+set month price target share rose
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C152
+  - Code: CCAT

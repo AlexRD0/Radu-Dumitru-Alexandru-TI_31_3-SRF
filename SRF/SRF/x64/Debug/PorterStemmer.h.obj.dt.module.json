@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "SRF\\x64\\Debug\\PorterStemmer.obj",
+            "outputs": [
+                "SRF\\x64\\Debug\\PorterStemmer.h.obj.dt.module.json",
+                "SRF\\x64\\Debug\\PorterStemmer.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

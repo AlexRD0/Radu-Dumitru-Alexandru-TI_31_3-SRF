@@ -1,0 +1,55 @@
+=== TITLU ===
+usa netscap urg action microsoft
+
+=== PARAGRAFE ===
+netscap commun corp' lead antitrust lawyer ha written u. depart justic urg immedi action microsoft corp netscap call far-reach anti-competit behavior
+
+letter date august made avail reuter tuesdai escal battl word compani began earlier thi month rival prepar issu version internet browser softwar
+
+gari reback outsid attornei repres netscap suggest letter issu turn back feder trade commiss investig
+
+eight-pag letter accus microsoft made written offer comput maker internet servic provid isp system integr larg corpor provid clandestin side payment discount microsoft desktop oper system window payment form real estat window screen
+
+netscap counsel induc made condit parti involv make competitor browser access user microsoft' browser
+
+browser enabl pc user access world wide web
+
+legal clash critic point netscap microsoft ar introduc version respect browser netscap navig microsoft internet explor
+
+netscap pioneer browser technolog surg public stock market stellar initi public offer august hold lead estim percent worldwid browser market
+
+microsoft window system domin person comput market percent share ha move quickli gain estim percent browser share
+
+mondai million user download latest internet explor version week avail
+
+softwar internet explor wa formal introduc week ago mondai netscap launch latest version navig softwar
+
+compani link content provid offer free trial subscript wai promot browser analyst microsoft ha thrown market financi clout internet product ha level plai field latest softwar
+
+netscap microsoft ar alreadi wai develop version browser softwar
+
+reback silicon vallei lawyer spearhead past legal tussl redmond wash.-bas softwar compani alleg practic address consent decre agre microsoft justic depart year ago
+
+microsoft' behavior anyth anti-competit pernici conduct address specif decre reback wrote letter
+
+reback interview number compani start tree compliant sinc war word began netscap microsoft week ago
+
+reback urg depart justic investig netscap believ wa illeg conduct microsoft sai depart swiftli mani small internet compani face threat elimin market reason microsoft' illeg conduct
+
+attornei suggest department' antitrust divis return matter feder trade commiss ha recent interest subject
+
+ani event ar request immedi attent time essenc antitrust divis ha open file respect microsoft
+
+sam.perry@reuters.com palo alto bureau
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+Class: bip:topics:1.0
+  - Code: C13
+  - Code: C34
+  - Code: CCAT

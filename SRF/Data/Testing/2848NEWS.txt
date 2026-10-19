@@ -1,0 +1,29 @@
+=== TITLU ===
+usa patlex corp sharehold reorgan
+
+=== PARAGRAFE ===
+patlex corp' sharehold tuesdai approv previous announc reorgan compani hold compani call dbt onlin
+
+hold compani trade nasdaq symbol dbto
+
+sharehold approv merger subsidiari obt onlin databas technolog florida privat compani provid onlin access public record
+
+term reorgan holder patlex common stock receiv share dbt onclin stock
+
+term merger holder databas technolog share receiv share dbt onlin stock dbt share
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+  - Code: I34400
+  - Code: I81502
+  - Code: I8150206
+Class: bip:topics:1.0
+  - Code: C11
+  - Code: C18
+  - Code: C181
+  - Code: CCAT

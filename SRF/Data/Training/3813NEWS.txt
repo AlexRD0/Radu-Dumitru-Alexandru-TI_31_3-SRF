@@ -1,0 +1,23 @@
+=== TITLU ===
+usa unwir planet carri infospac directori
+
+=== PARAGRAFE ===
+infospac tuesdai peopl busi email directori avail unwir planet' wireless product
+
+infospac unwir planet ha team at&t corp gte corp' gte mobilnet bell atlant corp nynex corp' nynex mobil unit custom cellular phone pager obtain inform store internet
+
+phone pager displai varieti inform infospace' directori make easier user locat peopl busi e-mail address internet
+
+york newsdesk
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+  - Code: I79020
+Class: bip:topics:1.0
+  - Code: C11
+  - Code: CCAT

@@ -1,0 +1,19 @@
+=== TITLU ===
+usa control data excalibur licens deal
+
+=== PARAGRAFE ===
+control data system excalibur technolog corp enter licens agreement control data integr excalibur' retrievalwar softwar intranet product compani wednesdai
+
+financi term deal immedi avail
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302003
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C33
+  - Code: CCAT

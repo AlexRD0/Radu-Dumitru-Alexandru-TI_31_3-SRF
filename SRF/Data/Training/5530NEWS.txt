@@ -1,0 +1,19 @@
+=== TITLU ===
+usa research alert optika start
+
+=== PARAGRAFE ===
+piper jaffrai volp welti initi optika imag strong bui rate
+
+share rose
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C152
+  - Code: CCAT

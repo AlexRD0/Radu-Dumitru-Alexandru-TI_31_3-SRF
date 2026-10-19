@@ -1,0 +1,19 @@
+=== TITLU ===
+usa legaci softwar announc acquisit
+
+=== PARAGRAFE ===
+legaci softwar acquir toe giant stock transact
+
+term deal final befor deal set close aug
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C18
+  - Code: C181
+  - Code: CCAT

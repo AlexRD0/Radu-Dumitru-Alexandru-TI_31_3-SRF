@@ -1,0 +1,39 @@
+=== TITLU ===
+usa group june net loss profit
+
+=== PARAGRAFE ===
+statement earn
+
+month end june
+
+
+
+revenu
+
+pretax earn loss
+
+net earn loss
+
+earn loss share common stock
+
+weight averag number common
+
+common equival share outstand
+
+thousand share data
+
+note full compani group softwar
+
+york newsdesk
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C151
+  - Code: CCAT

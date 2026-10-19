@@ -1,0 +1,60 @@
+=== TITLU ===
+usa california high-tech investor launch java fund
+
+=== PARAGRAFE ===
+high-tech ventur capit powerhous kleiner perkin caufield byer wednesdai ha creat million fund invest start-up firm develop busi base hot java technolog world wide web
+
+kleiner perkin sinc found ha creat web compani similar japan' network close affili busi major technolog compani includ intern busi machin corp compaq comput corp netscap commun corp investor fund java fund wa close ani invest
+
+kevin compton kleiner perkin gener partner fund manag fund aim improv small firm access corpor investor time product develop ha shorten frenzi web
+
+compani live web week spend year long corpor partner they'v dai
+
+java develop sun microsystem compani launch support kleiner perkin largest investor fund kleiner perkin institut investor group
+
+market care thi becaus there' lot monei market eric schmidt chief technolog offic sun microsystem interview
+
+note fund aim build broad enthusiasm java ha licens wide rang softwar develop rang redmond wash.-bas softwar giant microsoft corp taiwanes govern
+
+there' benefit that' hard quantifi peopl common share goal clear clear object invest togeth
+
+kleiner perkin corpor partner fund includ leader network person comput internet softwar databas softwar commun
+
+addit ibm compaq netscap corpor investor fund includ cisco system cabl tv compani comcast corp tele-commun japan' itochu corp oracl corp west media group kleiner perkin
+
+schmidt fund believ uniqu concentr technolog compar set ventur fund late s collect financ earli growth person comput industri
+
+fund set run year rel long time aim make averag invest million impli invest overal
+
+java fund invest ar start-up compani activ softwar calico technolog marimba
+
+activ softwar found privat held compani focus extend inform system world wide web multimedia portion internet calico technolog work softwar enabl sale repres quot order product servic
+
+palo alto calif.-bas marimba wa found februari kei member origin java develop team plan provid technolog develop deploi network-awar java applic
+
+java wa design sun program languag make possibl softwar run nearli comput system world make ideal global internet network comput network
+
+nearli corpor agre licens java technolog sun microsystem chief execut scott mcneali estim million comput devic abl java end
+
+sun ha set separ divis javasoft promot java-bas develop expand reach area includ huge task link older comput internet java
+
+anoth area innov expect filter ultim reduc data make usabl improv group commun network internet corpor network intranet
+
+absolut cours lifetim thi fund set invest extraordinarili import ani identifi schmidt
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302003
+  - Code: I3302004
+  - Code: I3302020
+  - Code: I3302021
+  - Code: I63000
+  - Code: I79020
+  - Code: I97400
+Class: bip:topics:1.0
+  - Code: C11
+  - Code: CCAT

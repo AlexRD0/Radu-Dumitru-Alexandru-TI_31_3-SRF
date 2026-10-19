@@ -1,0 +1,142 @@
+=== TITLU ===
+usa intern microcomput net
+
+=== PARAGRAFE ===
+intern microcomput softwar
+
+subsidiari
+
+consolid statement oper
+
+unaudit
+
+month end june
+
+
+
+net revenu
+
+product cost
+
+gross margin
+
+cost expens
+
+sale market
+
+
+
+gener
+
+administr
+
+research
+
+develop
+
+
+
+oper incom
+
+expens net
+
+incom loss befor
+
+incom tax
+
+incom tax provis
+
+net incom loss
+
+net incom loss
+
+common common
+
+equival share
+
+averag common
+
+common equival
+
+share
+
+comput earn
+
+loss share
+
+intern microcomput softwar
+
+subsidiari
+
+consolid statement oper
+
+twelv month end june
+
+
+
+net revenu
+
+product cost
+
+gross
+
+margin
+
+cost expens
+
+sale market
+
+
+
+gener
+
+administr
+
+research
+
+develop
+
+
+
+oper incom
+
+expens net
+
+incom loss befor
+
+incom tax
+
+incom tax provis
+
+net incom loss
+
+net incom loss
+
+common common
+
+equival share
+
+averag common
+
+common equival
+
+share
+
+comput earn
+
+loss share
+
+note consolid financi statement
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C151
+  - Code: C1511
+  - Code: CCAT

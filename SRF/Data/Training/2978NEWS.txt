@@ -1,0 +1,48 @@
+=== TITLU ===
+usa sun micro' java workshop initi
+
+=== PARAGRAFE ===
+sun microsystem company' java workshop suit softwar develop tool avail electron august initi introductori price
+
+larri weber vice presid gener manag workshop product sun microsystem confer call java workshop set develop tool company' hot java technolog avail discount price decemb
+
+low initi price suite' suggest price remain reflect sun' intent distribut softwar tool broadli sun industri execut
+
+goal java tool everi desktop comput industri sourc familiar strategi
+
+promot thi sun work number method distribut tool includ electron download deliv resel includ retail store
+
+java workshop design feel world wide web browser design work microsoft corp' window nt system solari
+
+major focu product extend develop tool usual softwar develop commun includ graphic artist web master author peopl engag publish content internet
+
+thi tool integr internet ani softwar tool java weber note browser technolog make easier individu program comput casual basi
+
+sun ha calcul broadest target tool product wide group million content user includ peopl manipul data spreadsheet
+
+peopl don't themselv programm thei transform data wai programm weber bottom tier content develop includ abil directli edit page marri page java applet
+
+page world wide web' hypertext markup languag enabl subject cross-referenc graphics-rich displai internet
+
+java applet ar small applic deliv internet variou task edit java languag run nearli ani comput
+
+java workshop sun' retail product compani requir purchas contact author resel compet partner
+
+tool enabl develop creat java applic graphic shield user command line code thu speed simplifi task program accord sun microsystem
+
+compani java workshop current number locat develop sophist java applet applic internet intern corpor network intranet
+
+sam.perry@reuters.com palo alto bureau
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302003
+  - Code: I3302020
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: C31
+  - Code: CCAT

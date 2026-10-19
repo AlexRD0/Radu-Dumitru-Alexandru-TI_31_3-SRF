@@ -1,0 +1,28 @@
+=== TITLU ===
+usa sprint enter internet provid arena
+
+=== PARAGRAFE ===
+sprint corp tuesdai chose netscap commun corp provid world wide web browser newli launch internet servic sprint internet passport
+
+sprint includ netscap navig retail internet system netscap featur sprint internet servic provid netscape' retail internet system
+
+sprint alreadi world' largest carrier internet traffic accord compani servic includ navig softwar access speed kilobit kbp rebat certif kbp modem local dial access u. citi
+
+price plan wa announc
+
+announc move sprint arena alreadi occupi at&t corp mci commun corp sever region bell oper compani
+
+york newsdesk
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+  - Code: I79020
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: C33
+  - Code: CCAT

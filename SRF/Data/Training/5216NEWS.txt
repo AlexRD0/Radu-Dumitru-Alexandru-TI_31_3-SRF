@@ -1,0 +1,34 @@
+=== TITLU ===
+usa high-tech compani mln java fund wsj
+
+=== PARAGRAFE ===
+ten power high-technolog compani ar invest million ventur fund support startup develop internet softwar java progam languag wall street journal report wednesdai
+
+intern busi machin corp tele-commun sun microsystem compaq comput corp u s west commun group netscap commun corp oracl corp ar investor java fund administ venture-capit firm kleiner perkin caulfield byer
+
+widespread endors java fund includ invest cisco system comcast corp japan' itochu corp mark unpreced rate adopt singl technolog wide rang high-tech industri newspap
+
+noth thi level adopt endors ha happen comput john doerr partner kleiner perkin
+
+financi invest compani ar plan put weight technolog return earli access ani breakthrough
+
+java ha hail revolutionari technolog becaus abil creat multimedia comput program work oper system mani industri expert believ mai put end microsoft corp' domin softwar industri ha long reli window platform microsoft control
+
+york newsroom
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302003
+  - Code: I3302004
+  - Code: I3302020
+  - Code: I3302021
+  - Code: I63000
+  - Code: I79020
+  - Code: I97400
+Class: bip:topics:1.0
+  - Code: C11
+  - Code: CCAT

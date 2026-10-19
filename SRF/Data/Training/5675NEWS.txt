@@ -1,0 +1,38 @@
+=== TITLU ===
+usa manag technolog fy loss
+
+=== PARAGRAFE ===
+period end april
+
+
+
+shr loss loss
+
+net loss loss
+
+rev
+
+avg shr primari
+
+data abov s share number
+
+note compani seven-for-on revers stock split march compani subsequ share offer
+
+fy includ charg million separ charg million relat softwar develop
+
+fy includ charg million relat writeoff acquisit asset
+
+manag technolog base london
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C151
+  - Code: C1511
+  - Code: CCAT

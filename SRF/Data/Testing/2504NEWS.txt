@@ -1,0 +1,34 @@
+=== TITLU ===
+usa unveil intranet product
+
+=== PARAGRAFE ===
+tuesdai unveil intranetwar softwar intend establish comput network compani grow market intern corpor network intranet
+
+ha leader sinc convent network softwar ha fallen netscap commun corp microsoft corp competit intranet privat network function internet' web
+
+intranetwar open product line million custom futur network chairman robert frankenberg compani provid softwar estim million network million user
+
+orem utah-bas novell' intranetwar full-servic intranet internet access product busi size build featur company' netwar network softwar
+
+latest product offer high-perform web browser server softwar softwar access publish web page design advantag latest standard surf internet far-flung corpor network
+
+give price softwar plan releas fall
+
+compani intranetwar compat exist network softwar compani preserv previou invest network softwar
+
+concentr intranetwar futur continu sell support netwar netwar
+
+stock drop cent afternoon trade nasdaq
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+  - Code: I3302021
+  - Code: I33030
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: CCAT

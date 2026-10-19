@@ -1,0 +1,30 @@
+=== TITLU ===
+usa u. headlin stock issu watch aug
+
+=== PARAGRAFE ===
+stock watch thi morn
+
+redman industri champion enterpris thei reach merger agreement redman share convert champion share redman close mondai champion close
+
+cheyenn softwar report fourth quarter earn share befor charg compar year expect percent sale earn growth year share close
+
+limit report quarter earn share versu pro forma earn year ago share close
+
+intim brand report quarter earn share versu pro forma earn year ago share close
+
+vermont teddi bear co expect post small profit fiscal year compar loss share previou year share close
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+  - Code: I49410
+  - Code: I64500
+  - Code: I83960
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C152
+  - Code: CCAT

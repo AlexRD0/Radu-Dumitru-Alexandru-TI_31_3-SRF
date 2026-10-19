@@ -1,0 +1,200 @@
+﻿#include <iostream>
+#include <fstream>
+#include <string>
+#include <filesystem>
+#include <pugixml.hpp>
+#include <set>
+#include <sstream>
+#include <cctype>
+#include <algorithm>
+#include "PorterStemmer.h"
+
+using namespace std;
+
+namespace fs = std::filesystem;
+
+// Incarcare stopwords din fisier
+set<string> loadStopwords(const string& filepath) {
+    set<string> stopwords;
+    ifstream file(filepath);
+    if (!file.is_open()) {
+        cerr << "[Avertisment] Nu s-a putut deschide " << filepath << "\n";
+        return stopwords;
+    }
+    string word;
+    while (getline(file, word)) {
+        // Trim whitespace
+        word.erase(0, word.find_first_not_of(" \t\r\n"));
+        word.erase(word.find_last_not_of(" \t\r\n") + 1);
+        if (!word.empty()) {
+            stopwords.insert(word);
+        }
+    }
+    file.close();
+    cout << "[Info] S-au incarcat " << stopwords.size() << " stopwords.\n";
+    return stopwords;
+}
+
+// Convertire text in lowercase
+string toLower(const string& text) {
+    string result = text;
+    transform(result.begin(), result.end(), result.begin(),
+        [](unsigned char c) { return tolower(c); });
+    return result;
+}
+
+// Separare text in cuvinte si aplicare transformari
+vector<string> processText(const string& text, const set<string>& stopwords, PorterStemmer& stemmer) {
+    vector<string> processedWords;
+    string word;
+    istringstream iss(text);
+
+    while (iss >> word) {
+        // Elimina caractere de punctuatie de la inceput si sfarsit
+        while (!word.empty() && !isalpha(word.front())) word.erase(0, 1);
+        while (!word.empty() && !isalpha(word.back())) word.pop_back();
+
+        if (word.empty()) continue;
+
+        // Convertire in lowercase
+        word = toLower(word);
+
+        // Aplicare stemming
+        word = stemmer.StemWord(word);
+
+        // Filtru: daca cuvantul nu e in stopwords
+        if (stopwords.find(word) == stopwords.end()) {
+            processedWords.push_back(word);
+        }
+    }
+
+    return processedWords;
+}
+
+void processXmlFile(const fs::path& inputFilePath, const fs::path& outputFilePath, const set<string>& stopwords) {
+    pugi::xml_document doc;
+    pugi::xml_parse_result result = doc.load_file(inputFilePath.c_str());
+
+    if (!result) {
+        cerr << "[Eroare Incarcare] " << inputFilePath.filename().string()
+            << " | " << result.description() << "\n";
+        return;
+    }
+
+    ofstream outFile(outputFilePath);
+    if (!outFile.is_open()) {
+        cerr << "[Eroare Scriere] Nu s-a putut deschide " << outputFilePath.string() << "\n";
+        return;
+    }
+
+    PorterStemmer stemmer;
+
+    // 1. Extragere TITLU
+    pugi::xml_node titleNode = doc.child("newsitem").child("title");
+    outFile << "=== TITLU ===\n";
+    if (titleNode) {
+        string titleText = titleNode.child_value();
+        vector<string> titleWords = processText(titleText, stopwords, stemmer);
+        for (size_t i = 0; i < titleWords.size(); i++) {
+            outFile << titleWords[i];
+            if (i < titleWords.size() - 1) outFile << " ";
+        }
+        outFile << "\n";
+    }
+    outFile << "\n";
+
+    // 2. Extragere PARAGRAFE <p>
+    outFile << "=== PARAGRAFE ===\n";
+    pugi::xml_node textNode = doc.child("newsitem").child("text");
+    if (textNode) {
+        for (pugi::xml_node p : textNode.children("p")) {
+            string paragraphText = p.child_value();
+            vector<string> paragraphWords = processText(paragraphText, stopwords, stemmer);
+            for (size_t i = 0; i < paragraphWords.size(); i++) {
+                outFile << paragraphWords[i];
+                if (i < paragraphWords.size() - 1) outFile << " ";
+            }
+            outFile << "\n\n";
+        }
+    }
+    outFile << "\n";
+
+    // 3. Extragere METADATA
+    outFile << "=== METADATA ===\n";
+    pugi::xml_node metadataNode = doc.child("newsitem").child("metadata");
+    if (metadataNode) {
+        // Coduri
+        for (pugi::xml_node codes : metadataNode.children("codes")) {
+            string codeClass = codes.attribute("class").value();
+            outFile << "Class: " << codeClass << "\n";
+            for (pugi::xml_node code : codes.children("code")) {
+                outFile << "  - Code: " << code.attribute("code").value() << "\n";
+            }
+        }
+    }
+
+    outFile.close();
+    cout << "[Succes] " << inputFilePath.filename().string()
+        << " -> " << outputFilePath.filename().string() << "\n";
+}
+
+void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const string& dirName, const set<string>& stopwords) {
+    cout << "\n=== PROCESARE " << dirName << " ===\n";
+
+    if (!fs::exists(inputDir) || !fs::is_directory(inputDir)) {
+        cerr << "[Eroare] Folderul de intrare nu exista: " << fs::absolute(inputDir) << "\n";
+        return;
+    }
+
+    try {
+        fs::create_directories(outputDir);
+    }
+    catch (const fs::filesystem_error& e) {
+        cerr << "[Eroare] Nu s-a putut crea folderul de iesire: " << e.what() << "\n";
+        return;
+    }
+
+    int processedCount = 0;
+
+    for (const auto& entry : fs::directory_iterator(inputDir)) {
+        if (entry.is_regular_file()) {
+            string ext = entry.path().extension().string();
+            transform(ext.begin(), ext.end(), ext.begin(), 
+                [](unsigned char c) { return tolower(c); });
+
+            if (ext == ".xml") {
+                fs::path xmlPath = entry.path();
+                fs::path txtPath = outputDir / xmlPath.filename();
+                txtPath.replace_extension(".txt");
+
+                processXmlFile(xmlPath, txtPath, stopwords);
+                processedCount++;
+            }
+        }
+    }
+
+    cout << "Procesare " << dirName << " completa! Au fost procesate " << processedCount << " fisiere XML.\n";
+}
+
+int main() {
+    // Incarcare stopwords
+    set<string> stopwords = loadStopwords("stopwords.txt");
+
+    // Procesare TESTING
+    fs::path testingInput = "ReutersDataSet/Reuters/Reuters_34/Testing";
+    fs::path testingOutput = "Data/Testing";
+    processDirectory(testingInput, testingOutput, "Testing", stopwords);
+
+    // Procesare TRAINING
+    fs::path trainingInput = "ReutersDataSet/Reuters/Reuters_34/Training";
+    fs::path trainingOutput = "Data/Training";
+    processDirectory(trainingInput, trainingOutput, "Training", stopwords);
+
+    cout << "\n=== FINALIZARE ===\n";
+    cout << "Toate fisierele XML au fost procesate cu succes!\n";
+    cout << "Transformari aplicate:\n";
+    cout << "  - Conversia in litere mici\n";
+    cout << "  - Stemming\n";
+    cout << "  - Eliminarea stopwords\n";
+    return 0;
+}

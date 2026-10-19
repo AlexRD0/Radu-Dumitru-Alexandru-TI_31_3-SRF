@@ -1,0 +1,35 @@
+=== TITLU ===
+usa linkon corp shr profit loss
+
+=== PARAGRAFE ===
+
+
+shr profit loss
+
+net profit loss
+
+rev
+
+month end juli
+
+shr loss loss
+
+net loss loss
+
+rev
+
+data abov s share number
+
+note abov ar tabul result quarter fiscal year end juli
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C151
+  - Code: CCAT

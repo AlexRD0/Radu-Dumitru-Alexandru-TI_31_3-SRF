@@ -1,0 +1,35 @@
+=== TITLU ===
+usa scientif softwar loss widen
+
+=== PARAGRAFE ===
+
+
+shr loss loss
+
+net loss loss
+
+rev
+
+month
+
+shr loss loss
+
+net loss loss
+
+rev
+
+data abov s share number
+
+note full compani scientif software-intercomp
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C151
+  - Code: CCAT

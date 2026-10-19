@@ -1,0 +1,36 @@
+=== TITLU ===
+usa maxi sai simciti delai
+
+=== PARAGRAFE ===
+walnut creek calif aug maxi wednesdai ha delai releas version popular softwar simciti mid previou earli
+
+statement compani simciti enhanc befor ship
+
+delai ensur everi aspect simciti meet expect consum thi product sam pool chief execut sim brand cornerston maxi franchis compromis qualiti
+
+maxi share mid-afternoon
+
+simciti video game incorpor latest d design mini-simul
+
+simcity' launch push back maxi track launch titl simcopt simgolf simpark simtun time holidai shopper
+
+releas product simultan command greater consum attent dure tradition heaviest bui period year pool
+
+street simciti expect releas half
+
+simcopt enabl player fly citi thei build perform variou mission simgolf golfer plai green chang cours design cours
+
+street simciti permit player drive race citi creation
+
+children' titl includ simpark player plan build outdoor natur park simtun kid explor experi relationship music art
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302021
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: CCAT

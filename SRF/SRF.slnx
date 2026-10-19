@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SRF.vcxproj" Id="c564fe26-c15a-408b-8738-0d0b3b17efa3" />
+</Solution>

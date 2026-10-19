@@ -1,0 +1,30 @@
+=== TITLU ===
+usa microsoft browser deal sprint
+
+=== PARAGRAFE ===
+microsoft corp expect sprint corp' internet access servic offer softwar company' internet explor option microsoft offici tuesdai
+
+mike ahern microsoft group product manag hope agreement compani announc declin discuss detail
+
+we'r absolut talk sprint ahern fulli expect sprint offer internet explor internet access servic
+
+earlier sprint offer netscap commun corp' navig browser custom servic
+
+sprint sai relationship wa exclus ahern expect arrang custom choos browser thei
+
+microsoft netscap launch version internet browser thi week mark phase rivalri compani
+
+seattl bureau
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302020
+  - Code: I79020
+Class: bip:topics:1.0
+  - Code: C22
+  - Code: C33
+  - Code: CCAT

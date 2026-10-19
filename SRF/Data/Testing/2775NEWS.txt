@@ -1,0 +1,44 @@
+=== TITLU ===
+usa interview compuserv ceo optimist
+
+=== PARAGRAFE ===
+compuserv corp presid chief execut offic bob massei tuesdai despit share first-quart loss project second-quart loss outlook posit on-lin servic firm
+
+move quarter we'r increas usag compuserv inform servic massei telephon interview
+
+trend usag member revenu member ar clearli direct
+
+subscrib declin quarter end juli massei mai weather-rel gener trend posit direct
+
+compuserv ha address subscrib declin upgrad infrastructur improv speed perform releas softwar product compuserv easier ha integr internet browser
+
+market program promot compuserv wow teen releas septemb
+
+ar expect loss quarter neighborhood earn improv point forward massei telephon interview
+
+earlier tuesdai compuserv report quarter warn expect second-quart loss expect improv half
+
+compani extrem posit advantag opportun thi nascent environ we'r consum onlin internet market corpor internet servic massei
+
+corpor servic call company' crown jewel gain custom quarter bring total
+
+partnership ibm netscap commun corp microsoft corp oracl corp provid comprehens intranet-host platform quarter compuserv icon microsoft window onlin servic folder
+
+juli compuserv million direct worldwid subscrib niftyserv japanes license total million wow servic novic user introduc month ago grew user sprynet internet access servic grew
+
+cleveland newsdesk
+
+
+=== METADATA ===
+Class: bip:countries:1.0
+  - Code: USA
+Class: bip:industries:1.0
+  - Code: I33020
+  - Code: I3302003
+  - Code: I3302020
+  - Code: I3302021
+  - Code: I83940
+Class: bip:topics:1.0
+  - Code: C15
+  - Code: C152
+  - Code: CCAT
