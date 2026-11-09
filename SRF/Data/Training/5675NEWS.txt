@@ -1,38 +1,32 @@
 === TITLU ===
-usa manag technolog fy loss
+usa manag technolog fy loss 
 
 === PARAGRAFE ===
-period end april
+period end april 
 
 
 
-shr loss loss
+shr loss loss 
 
-net loss loss
+net loss loss 
 
-rev
+rev 
 
-avg shr primari
+avg shr primari 
 
-data abov s share number
+data s share number 
 
-note compani seven-for-on revers stock split march compani subsequ share offer
+note compani revers stock split march compani subsequ share offer 
 
-fy includ charg million separ charg million relat softwar develop
+fy includ charg million separ charg million relat softwar develop 
 
-fy includ charg million relat writeoff acquisit asset
+fy includ charg million relat writeoff acquisit asset 
 
-manag technolog base london
+manag technolog base london 
 
 
 === METADATA ===
-Class: bip:countries:1.0
-  - Code: USA
-Class: bip:industries:1.0
-  - Code: I33020
-  - Code: I3302021
-Class: bip:topics:1.0
-  - Code: C15
-  - Code: C151
-  - Code: C1511
-  - Code: CCAT
+C15
+C151
+C1511
+CCAT

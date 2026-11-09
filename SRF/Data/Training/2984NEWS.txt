@@ -1,35 +1,29 @@
 === TITLU ===
-usa scientif softwar loss widen
+usa scientif softwar loss widen 
 
 === PARAGRAFE ===
 
 
-shr loss loss
+shr loss loss 
 
-net loss loss
+net loss loss 
 
-rev
+rev 
 
-month
+month 
 
-shr loss loss
+shr loss loss 
 
-net loss loss
+net loss loss 
 
-rev
+rev 
 
-data abov s share number
+data s share number 
 
-note full compani scientif software-intercomp
+note full compani scientif softwar intercomp 
 
 
 === METADATA ===
-Class: bip:countries:1.0
-  - Code: USA
-Class: bip:industries:1.0
-  - Code: I33020
-  - Code: I3302021
-Class: bip:topics:1.0
-  - Code: C15
-  - Code: C151
-  - Code: CCAT
+C15
+C151
+CCAT

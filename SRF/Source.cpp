@@ -4,16 +4,24 @@
 #include <filesystem>
 #include <pugixml.hpp>
 #include <set>
+#include <map>
+#include <vector>
 #include <sstream>
 #include <cctype>
 #include <algorithm>
 #include "PorterStemmer.h"
 
+struct DocumentFeatures {
+    string id;
+    string split;
+    map<string, int> frequencies;
+    vector<string> topics;
+};
+
 using namespace std;
 
 namespace fs = std::filesystem;
 
-// Incarcare stopwords din fisier
 set<string> loadStopwords(const string& filepath) {
     set<string> stopwords;
     ifstream file(filepath);
@@ -35,7 +43,6 @@ set<string> loadStopwords(const string& filepath) {
     return stopwords;
 }
 
-// Convertire text in lowercase
 string toLower(const string& text) {
     string result = text;
     transform(result.begin(), result.end(), result.begin(),
@@ -43,102 +50,126 @@ string toLower(const string& text) {
     return result;
 }
 
-// Separare text in cuvinte si aplicare transformari
+// Normalizeaza textul: separa cuvintele, elimina stopwords si aplica stemming.
 vector<string> processText(const string& text, const set<string>& stopwords, PorterStemmer& stemmer) {
     vector<string> processedWords;
     string word;
-    istringstream iss(text);
 
-    while (iss >> word) {
-        // Elimina caractere de punctuatie de la inceput si sfarsit
-        while (!word.empty() && !isalpha(word.front())) word.erase(0, 1);
-        while (!word.empty() && !isalpha(word.back())) word.pop_back();
-
-        if (word.empty()) continue;
-
-        // Convertire in lowercase
-        word = toLower(word);
-
-        // Aplicare stemming
-        word = stemmer.StemWord(word);
-
-        // Filtru: daca cuvantul nu e in stopwords
-        if (stopwords.find(word) == stopwords.end()) {
-            processedWords.push_back(word);
+    // Construieste fiecare cuvant folosind doar caractere alfabetice.
+    for (unsigned char character : text) {
+        if (isalpha(character)) {
+            word.push_back(static_cast<char>(tolower(character)));
+            continue;
         }
+
+        // Orice caracter nealfabetic marcheaza sfarsitul unui cuvant.
+        if (word.empty()) {
+            continue;
+        }
+
+        // Pastreaza doar cuvintele relevante si le reduce la forma de baza.
+        if (stopwords.find(word) == stopwords.end()) {
+            processedWords.push_back(stemmer.StemWord(word));
+        }
+        word.clear();
+    }
+
+    // Proceseaza ultimul cuvant daca textul nu se termina cu punctuatie.
+    if (!word.empty() && stopwords.find(word) == stopwords.end()) {
+        processedWords.push_back(stemmer.StemWord(word));
     }
 
     return processedWords;
 }
 
-void processXmlFile(const fs::path& inputFilePath, const fs::path& outputFilePath, const set<string>& stopwords) {
+// Citeste un XML, extrage continutul relevant si il salveaza in format TXT.
+bool processXmlFile(const fs::path& inputFilePath, const fs::path& outputFilePath,
+    const string& split, const set<string>& stopwords, vector<DocumentFeatures>& documents) {
+    // Incarca si valideaza structura XML.
     pugi::xml_document doc;
     pugi::xml_parse_result result = doc.load_file(inputFilePath.c_str());
 
     if (!result) {
         cerr << "[Eroare Incarcare] " << inputFilePath.filename().string()
             << " | " << result.description() << "\n";
-        return;
+        return false;
     }
 
     ofstream outFile(outputFilePath);
     if (!outFile.is_open()) {
         cerr << "[Eroare Scriere] Nu s-a putut deschide " << outputFilePath.string() << "\n";
-        return;
+        return false;
     }
 
+    // Pregateste datele care vor fi salvate pentru acest document.
     PorterStemmer stemmer;
+    DocumentFeatures features;
+    features.split = split;
+    pugi::xml_node newsItem = doc.child("newsitem");
+    features.id = newsItem.attribute("itemid").value();
+    if (features.id.empty()) {
+        features.id = inputFilePath.stem().string();
+    }
 
-    // 1. Extragere TITLU
-    pugi::xml_node titleNode = doc.child("newsitem").child("title");
+    // Extrage si normalizeaza titlul, apoi actualizeaza frecventele cuvintelor.
+    // Extragere TITLU
+    pugi::xml_node titleNode = newsItem.child("title");
     outFile << "=== TITLU ===\n";
     if (titleNode) {
-        string titleText = titleNode.child_value();
-        vector<string> titleWords = processText(titleText, stopwords, stemmer);
-        for (size_t i = 0; i < titleWords.size(); i++) {
-            outFile << titleWords[i];
-            if (i < titleWords.size() - 1) outFile << " ";
+        vector<string> titleWords = processText(titleNode.child_value(), stopwords, stemmer);
+        for (const string& word : titleWords) {
+            outFile << word << " ";
+            ++features.frequencies[word];
         }
         outFile << "\n";
     }
     outFile << "\n";
 
-    // 2. Extragere PARAGRAFE <p>
+    // Extrage paragrafele si aduna frecventele lor la cele din titlu.
+    // Extragere PARAGRAFE
     outFile << "=== PARAGRAFE ===\n";
-    pugi::xml_node textNode = doc.child("newsitem").child("text");
+    pugi::xml_node textNode = newsItem.child("text");
     if (textNode) {
         for (pugi::xml_node p : textNode.children("p")) {
-            string paragraphText = p.child_value();
-            vector<string> paragraphWords = processText(paragraphText, stopwords, stemmer);
-            for (size_t i = 0; i < paragraphWords.size(); i++) {
-                outFile << paragraphWords[i];
-                if (i < paragraphWords.size() - 1) outFile << " ";
+            vector<string> paragraphWords = processText(p.child_value(), stopwords, stemmer);
+            for (const string& word : paragraphWords) {
+                outFile << word << " ";
+                ++features.frequencies[word];
             }
             outFile << "\n\n";
         }
     }
     outFile << "\n";
 
-    // 3. Extragere METADATA
+    // Extrage topicurile din metadata si le pastreaza in document.
+    // Extragere METADATA
     outFile << "=== METADATA ===\n";
-    pugi::xml_node metadataNode = doc.child("newsitem").child("metadata");
+    pugi::xml_node metadataNode = newsItem.child("metadata");
     if (metadataNode) {
-        // Coduri
         for (pugi::xml_node codes : metadataNode.children("codes")) {
-            string codeClass = codes.attribute("class").value();
-            outFile << "Class: " << codeClass << "\n";
+            if (string(codes.attribute("class").value()) != "bip:topics:1.0") {
+                continue;
+            }
+
             for (pugi::xml_node code : codes.children("code")) {
-                outFile << "  - Code: " << code.attribute("code").value() << "\n";
+                string codeValue = code.attribute("code").value();
+                if (!codeValue.empty()) {
+                    features.topics.push_back(codeValue);
+                    outFile << codeValue << "\n";
+                }
             }
         }
     }
 
-    outFile.close();
+    documents.push_back(features);
     cout << "[Succes] " << inputFilePath.filename().string()
         << " -> " << outputFilePath.filename().string() << "\n";
+    return true;
 }
 
-void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const string& dirName, const set<string>& stopwords) {
+// Parcurge un director si proceseaza fiecare fisier XML gasit direct in acesta.
+void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const string& dirName,
+    const set<string>& stopwords, vector<DocumentFeatures>& documents) {
     cout << "\n=== PROCESARE " << dirName << " ===\n";
 
     if (!fs::exists(inputDir) || !fs::is_directory(inputDir)) {
@@ -156,6 +187,7 @@ void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const
 
     int processedCount = 0;
 
+    // Verifica fiecare intrare si ignora directoarele sau fisierele non-XML.
     for (const auto& entry : fs::directory_iterator(inputDir)) {
         if (entry.is_regular_file()) {
             string ext = entry.path().extension().string();
@@ -163,12 +195,14 @@ void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const
                 [](unsigned char c) { return tolower(c); });
 
             if (ext == ".xml") {
+                // Pastreaza numele fisierului, dar schimba extensia pentru iesirea TXT.
                 fs::path xmlPath = entry.path();
                 fs::path txtPath = outputDir / xmlPath.filename();
                 txtPath.replace_extension(".txt");
 
-                processXmlFile(xmlPath, txtPath, stopwords);
-                processedCount++;
+                if (processXmlFile(xmlPath, txtPath, dirName, stopwords, documents)) {
+                    processedCount++;
+                }
             }
         }
     }
@@ -176,19 +210,79 @@ void processDirectory(const fs::path& inputDir, const fs::path& outputDir, const
     cout << "Procesare " << dirName << " completa! Au fost procesate " << processedCount << " fisiere XML.\n";
 }
 
+// Genereaza dictionarul global si reprezentarile VSM pentru toate documentele.
+void writeVectorSpaceFiles(const fs::path& outputDirectory, const vector<DocumentFeatures>& documents) {
+    // Colecteaza fiecare termen distinct folosit in documente.
+    set<string> dictionary;
+    for (const DocumentFeatures& document : documents) {
+        for (const auto& [word, frequency] : document.frequencies) {
+            dictionary.insert(word);
+        }
+    }
+
+    ofstream dictionaryFile(outputDirectory / "global_dictionary.txt");
+    ofstream vectorsFile(outputDirectory / "sparse_vectors.txt");
+    ofstream datasetFile(outputDirectory / "feature_vectors.txt");
+    if (!dictionaryFile.is_open() || !vectorsFile.is_open() || !datasetFile.is_open()) {
+        cerr << "[Eroare Scriere] Nu s-au putut crea fisierele VSM.\n";
+        return;
+    }
+
+    // Asociaza fiecarui termen o pozitie stabila in vectorul de caracteristici.
+    map<string, size_t> positions;
+    size_t position = 0;
+    for (const string& word : dictionary) {
+        positions[word] = position;
+        dictionaryFile << "@attribute " << word << "\n";
+        datasetFile << "@attribute " << word << "\n";
+        ++position;
+    }
+    datasetFile << "@data\n";
+
+    // Scrie doar termenii prezenti, pastrand vectorii intr-un format rar.
+    for (const DocumentFeatures& document : documents) {
+        vectorsFile << document.id;
+        for (const auto& [word, frequency] : document.frequencies) {
+            // Format: pozitia termenului:frecventa in document.
+            vectorsFile << " " << positions[word] << ":" << frequency;
+        }
+        vectorsFile << "\n";
+
+        // Adauga si topicurile si impartirea documentului pentru setul de date.
+        datasetFile << document.id << " #";
+        bool firstVector = true;
+        for (const auto& [word, frequency] : document.frequencies) {
+            datasetFile << (firstVector ? " " : " ") << positions[word] << ":" << frequency;
+            firstVector = false;
+        }
+        datasetFile << " # ";
+        for (size_t topicIndex = 0; topicIndex < document.topics.size(); ++topicIndex) {
+            if (topicIndex > 0) datasetFile << " ";
+            datasetFile << document.topics[topicIndex];
+        }
+        datasetFile << " # " << document.split << "\n";
+    }
+
+    cout << "[Succes] Dicționar global: " << dictionary.size()
+        << " termeni; vectori rari: " << documents.size() << " documente.\n";
+}
+
 int main() {
     // Incarcare stopwords
     set<string> stopwords = loadStopwords("stopwords.txt");
+    vector<DocumentFeatures> documents;
 
     // Procesare TESTING
     fs::path testingInput = "ReutersDataSet/Reuters/Reuters_34/Testing";
     fs::path testingOutput = "Data/Testing";
-    processDirectory(testingInput, testingOutput, "Testing", stopwords);
+    processDirectory(testingInput, testingOutput, "Testing", stopwords, documents);
 
     // Procesare TRAINING
     fs::path trainingInput = "ReutersDataSet/Reuters/Reuters_34/Training";
     fs::path trainingOutput = "Data/Training";
-    processDirectory(trainingInput, trainingOutput, "Training", stopwords);
+    processDirectory(trainingInput, trainingOutput, "Training", stopwords, documents);
+
+    writeVectorSpaceFiles("Data", documents);
 
     cout << "\n=== FINALIZARE ===\n";
     cout << "Toate fisierele XML au fost procesate cu succes!\n";

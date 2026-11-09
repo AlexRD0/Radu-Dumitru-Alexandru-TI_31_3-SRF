@@ -20,11 +20,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="PorterStemmer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <Text Include="Data\feature_vectors.txt" />
+    <Text Include="Data\global_dictionary.txt" />
+    <Text Include="Data\sparse_vectors.txt" />
+    <Text Include="Data\Testing\2504NEWS.txt" />
+    <Text Include="Data\Testing\2538NEWS.txt" />
+    <Text Include="Data\Testing\2775NEWS.txt" />
+    <Text Include="Data\Testing\2792NEWS.txt" />
+    <Text Include="Data\Testing\2822NEWS.txt" />
+    <Text Include="Data\Testing\2836NEWS.txt" />
+    <Text Include="Data\Testing\2848NEWS.txt" />
     <Text Include="Data\Training\2917NEWS.txt" />
     <Text Include="Data\Training\2955NEWS.txt" />
     <Text Include="Data\Training\2978NEWS.txt" />
@@ -52,9 +60,13 @@
     <Text Include="Data\Training\5675NEWS.txt" />
     <Text Include="Data\Training\5678NEWS.txt" />
     <Text Include="Data\Training\5697NEWS.txt" />
+    <Text Include="stopwords.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PorterStemmer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

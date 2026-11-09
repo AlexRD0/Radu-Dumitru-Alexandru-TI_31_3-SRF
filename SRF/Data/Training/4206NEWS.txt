@@ -1,142 +1,136 @@
 === TITLU ===
-usa intern microcomput net
+usa intern microcomput net 
 
 === PARAGRAFE ===
-intern microcomput softwar
+intern microcomput softwar 
 
-subsidiari
+subsidiari 
 
-consolid statement oper
+consolid statement oper 
 
-unaudit
+unaudit 
 
-month end june
+month end june 
 
 
 
-net revenu
+net revenu 
 
-product cost
+product cost 
 
-gross margin
+gross margin 
 
-cost expens
+cost expens 
 
-sale market
+sale market 
 
 
 
-gener
+gener 
 
-administr
+administr 
 
-research
+research 
 
-develop
+develop 
 
 
 
-oper incom
+oper incom 
 
-expens net
+expens net 
 
-incom loss befor
+incom loss 
 
-incom tax
+incom tax 
 
-incom tax provis
+incom tax provis 
 
-net incom loss
+net incom loss 
 
-net incom loss
+net incom loss 
 
-common common
+common common 
 
-equival share
+equival share 
 
-averag common
+averag common 
 
-common equival
+common equival 
 
-share
+share 
 
-comput earn
+comput earn 
 
-loss share
+loss share 
 
-intern microcomput softwar
+intern microcomput softwar 
 
-subsidiari
+subsidiari 
 
-consolid statement oper
+consolid statement oper 
 
-twelv month end june
+twelv month end june 
 
 
 
-net revenu
+net revenu 
 
-product cost
+product cost 
 
-gross
+gross 
 
-margin
+margin 
 
-cost expens
+cost expens 
 
-sale market
+sale market 
 
 
 
-gener
+gener 
 
-administr
+administr 
 
-research
+research 
 
-develop
+develop 
 
 
 
-oper incom
+oper incom 
 
-expens net
+expens net 
 
-incom loss befor
+incom loss 
 
-incom tax
+incom tax 
 
-incom tax provis
+incom tax provis 
 
-net incom loss
+net incom loss 
 
-net incom loss
+net incom loss 
 
-common common
+common common 
 
-equival share
+equival share 
 
-averag common
+averag common 
 
-common equival
+common equival 
 
-share
+share 
 
-comput earn
+comput earn 
 
-loss share
+loss share 
 
-note consolid financi statement
+note consolid financi statement 
 
 
 === METADATA ===
-Class: bip:countries:1.0
-  - Code: USA
-Class: bip:industries:1.0
-  - Code: I33020
-  - Code: I3302021
-Class: bip:topics:1.0
-  - Code: C15
-  - Code: C151
-  - Code: C1511
-  - Code: CCAT
+C15
+C151
+C1511
+CCAT

@@ -1,30 +1,23 @@
 === TITLU ===
-usa microsoft browser deal sprint
+usa microsoft see browser deal sprint 
 
 === PARAGRAFE ===
-microsoft corp expect sprint corp' internet access servic offer softwar company' internet explor option microsoft offici tuesdai
+microsoft corp expect sprint corp s internet access servic offer softwar compani s internet explor option microsoft offici tuesdai 
 
-mike ahern microsoft group product manag hope agreement compani announc declin discuss detail
+mike ahern microsoft group product manag hope agreement compani announc declin discuss detail 
 
-we'r absolut talk sprint ahern fulli expect sprint offer internet explor internet access servic
+absolut talk sprint ahern fulli expect sprint offer internet explor internet access servic 
 
-earlier sprint offer netscap commun corp' navig browser custom servic
+earlier sprint offer netscap commun corp s navig browser custom servic 
 
-sprint sai relationship wa exclus ahern expect arrang custom choos browser thei
+sprint relationship exclus ahern expect arrang custom choos browser 
 
-microsoft netscap launch version internet browser thi week mark phase rivalri compani
+microsoft netscap launch version internet browser week mark phase rivalri compani 
 
-seattl bureau
+seattl bureau 
 
 
 === METADATA ===
-Class: bip:countries:1.0
-  - Code: USA
-Class: bip:industries:1.0
-  - Code: I33020
-  - Code: I3302020
-  - Code: I79020
-Class: bip:topics:1.0
-  - Code: C22
-  - Code: C33
-  - Code: CCAT
+C22
+C33
+CCAT
